@@ -24,6 +24,11 @@ jobs:
         python -m venv benv
         source benv/bin/activate
 
+    - name: which python with venv
+      run: |
+        source benv/bin/activate
+        which python
+
 
     - name: Which Python
       run: which python
