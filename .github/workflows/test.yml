@@ -14,10 +14,16 @@ jobs:
     - name: Which Python
       run: which python
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.6
+    # - name: Set up Python
+    #   uses: actions/setup-python@v2
+    #   with:
+    #     python-version: 3.6
+
+    - name: venv
+      run: |
+        python -m venv benv
+        source benv/bin/activate
+
 
     - name: Which Python
       run: which python
